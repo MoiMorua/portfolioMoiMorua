@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="moi-name">
+    <text text-anchor="top"
+        x="0"
+        y=".5em"
+        dy=".35em"
+        class="text"
+        font-size="2em"
+        style="stroke: white; stroke-width: .2;"
+        >
+        Moi Morua
+    </text>
+</svg>

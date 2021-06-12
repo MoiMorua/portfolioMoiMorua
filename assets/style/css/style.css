@@ -1,0 +1,149 @@
+@import url(../css/animation.css);
+body {
+  margin: 0;
+  background-color: #141214;
+  overflow-x: hidden;
+  font-size: 64px;
+  font-family: 'Montserrat', sans-serif; }
+
+/*NAVBAR*/
+.navbar {
+  background-color: #141214;
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: calc(100% - 2em);
+  height: 60px;
+  padding: .5em 1em;
+  display: flex;
+  font-size: 24px;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: .2s ease-in; }
+  .navbar.shrink {
+    font-size: 16px;
+    height: 45px; }
+  .navbar .navbar-brand {
+    margin: auto 0 auto 0;
+    font-size: 1em; }
+  .navbar ul {
+    padding: 0;
+    display: inherit;
+    flex-direction: inherit;
+    height: 1em;
+    margin: auto 0; }
+    .navbar ul li {
+      margin: auto .5em;
+      list-style: none; }
+      .navbar ul li:hover a::after {
+        width: 100%; }
+      .navbar ul li a {
+        font-size: 1em;
+        text-decoration: none;
+        color: white;
+        position: relative; }
+        .navbar ul li a::after {
+          content: "";
+          position: absolute;
+          transition: 0.2s;
+          height: 2px;
+          width: 0;
+          right: 0;
+          bottom: 0;
+          background-color: cyan; }
+
+/*END NAVBAR*/
+/*HEADER*/
+.main-view {
+  height: 100vh;
+  width: 100%; }
+
+.main-name {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  margin: 0;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+.main-detail-wrapper {
+  width: min-content;
+  position: fixed;
+  color: white;
+  font-size: 64px;
+  left: 50%;
+  top: calc(50% + 1em);
+  transform: translate(-50%, -50%); }
+  .main-detail-wrapper .main-detail {
+    font-family: 'Inconsolata', monospace;
+    font-size: .5em;
+    letter-spacing: 0.1em;
+    margin: 0 auto;
+    display: inline-block;
+    border-right: 3px solid cyan;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 2.5s steps(25, end), blink 0.75s step-end infinite; }
+
+.main-view-design {
+  color: white;
+  font-size: 64px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+  .main-view-design #__big_m {
+    font-family: 'Limelight', cursive;
+    font-size: 4.5em;
+    transform: rotate(15deg);
+    text-shadow: -5px -5px rgba(0, 255, 255, 0.8), 5px 5px rgba(255, 0, 0, 0.8); }
+
+/*END HEADER*/
+/*Conocimiento*/
+#conocimiento {
+  height: 100vh; }
+  #conocimiento h2 {
+    color: white;
+    font-size: 5rem;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    transform: translateY(100%); }
+
+/*END Conocimiento*/
+/*MISC*/
+.go-down {
+  position: fixed;
+  height: 15%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 1px solid white;
+  font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100; }
+  .go-down:hover {
+    cursor: pointer; }
+  .go-down span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: #141214; }
+
+.__fill-from-bottom {
+  fill: url(../../svg/fill-from-bottom.svg); }
+
+/*END MISC*/
+
+/*# sourceMappingURL=style.css.map */

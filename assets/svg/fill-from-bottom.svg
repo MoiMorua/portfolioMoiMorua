@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <linearGradient id="">
+        <stop offset="0" stop-color="#fff">
+              <animate dur="0.5s" attributeName="offset" fill="freeze" from="0" to="1" />
+        </stop>
+        <stop offset="0" stop-color="rgba(0,0,0,0)">
+            <animate dur="0.5s" attributeName="offset" fill="freeze" from="0" to="1" />
+        </stop>
+    </linearGradient>
+</svg>
